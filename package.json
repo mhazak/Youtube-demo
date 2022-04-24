@@ -1,0 +1,20 @@
+{
+  "name": "clocks",
+  "description": "Simple clock app.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "total4": "latest"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.css -w"
+  },
+  "keywords": [
+    "empty",
+    "project"
+  ],
+  "author": "Marek Hazák",
+  "license": "MIT"
+}

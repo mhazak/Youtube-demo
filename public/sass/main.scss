@@ -1,0 +1,67 @@
+$color-black-dark: #0f0f0f;
+$color-black-medium: #181818;
+$color-black-light: #212121;
+$color-black-darker: #121212;
+$color-red: #cc0000;
+$color-grey: #aaaaaa;
+$color-grey-dark: #303030;
+$color-grey-medium: #ffffff14;
+$color-grey-light: #383838;
+$color-white: #fff;
+$color-blue: #1c62b9;
+
+@import './header';
+@import './sidemenu';
+
+main {
+    display: flex;
+}
+
+
+.search-input {
+
+    border-color: $color-grey-dark;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &:focus-within {
+        background-color: $color-black-darker;
+        outline: 1px solid $color-blue;
+
+        & > .fa-search {
+            visibility: visible;
+        }
+    }
+    
+
+    input {
+        border: 0;
+        background-color: $color-black-darker;
+        width: inherit;
+        height: 100%;
+        padding: 1rem;
+        color: $color-white;
+        
+        &:active, 
+        &:focus-visible {
+            outline: 0;
+        }
+        
+        &:focus-visible &::before {
+            content: 'fokume';
+        }
+        
+    }
+    & > .fa-search {
+        color: white;
+        padding: 1rem;
+        padding-right: 0;
+        visibility: hidden;
+        background-color: transparent;
+    }
+}
+
+.fas, .fa, .fal, .far {
+    color: white;
+}

@@ -1,0 +1,105 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .7rem 2.5rem;
+  background-color: #212121; }
+  .header__intro {
+    display: flex;
+    align-items: center; }
+  .header__search {
+    display: flex;
+    flex: 0 0 33%; }
+    .header__search--btn {
+      background-color: #ffffff14;
+      height: 100%;
+      width: 6.4rem;
+      border: 0; }
+  .header__logo {
+    margin-left: 1.3rem;
+    width: 12rem;
+    height: 2rem; }
+    .header__logo--text {
+      fill: white; }
+  .header__icon {
+    font-size: 2rem;
+    color: #fff; }
+  .header__icon.svg {
+    fill: #fff;
+    width: 3rem;
+    height: 2.9rem;
+    margin-right: 2rem; }
+  .header__microphone {
+    display: flex;
+    align-items: center;
+    background-color: #121212;
+    margin-left: .5rem;
+    padding: 1.5rem;
+    border-radius: 50%; }
+  .header__badges {
+    display: flex;
+    align-items: center; }
+    .header__badges--user > span {
+      padding: 1rem 1.2rem;
+      border-radius: 50%;
+      background-color: lightcoral; }
+    .header__badges > i:not(:last-child) {
+      margin-right: 2rem; }
+
+.sidemenu {
+  font-family: "Raleway",Arial, sans-serif;
+  font-size: 1.4rem;
+  background-color: #212121;
+  width: 24rem;
+  color: #fff;
+  padding: 1rem 0 2.4rem;
+  list-style: none; }
+  .sidemenu hr {
+    border-color: #ffffff14;
+    margin-left: -2.4rem; }
+  .sidemenu__item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2.4rem; }
+    .sidemenu__item:hover {
+      background-color: #383838; }
+    .sidemenu__item--icon {
+      fill: #fff;
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: 2.4rem; }
+
+main {
+  display: flex; }
+
+.search-input {
+  border-color: #303030;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .search-input:focus-within {
+    background-color: #121212;
+    outline: 1px solid #1c62b9; }
+    .search-input:focus-within > .fa-search {
+      visibility: visible; }
+  .search-input input {
+    border: 0;
+    background-color: #121212;
+    width: inherit;
+    height: 100%;
+    padding: 1rem;
+    color: #fff; }
+    .search-input input:active, .search-input input:focus-visible {
+      outline: 0; }
+    .search-input input:focus-visible .search-input input::before {
+      content: 'fokume'; }
+  .search-input > .fa-search {
+    color: white;
+    padding: 1rem;
+    padding-right: 0;
+    visibility: hidden;
+    background-color: transparent; }
+
+.fas, .fa, .fal, .far {
+  color: white; }

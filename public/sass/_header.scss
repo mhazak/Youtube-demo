@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem 2.5rem;
+    background-color: $color-black-light;
+
+    &__intro {
+        display: flex;
+        align-items: center;
+    }
+
+    &__search {
+        display: flex;
+        flex: 0 0 33%;
+        &--btn {
+            background-color: $color-grey-medium;
+            // box-shadow: 0;
+            height: 100%;
+            width: 6.4rem;
+            border: 0;
+        }
+    }
+
+    &__logo {
+        margin-left: 1.3rem;
+        width: 12rem;
+        height: 2rem;
+        &--text { fill: white; }
+    }
+
+    &__icon {
+        font-size: 2rem;
+        color: $color-white;
+    }
+    &__icon.svg  {
+        fill: $color-white;
+        width: 3rem;
+        height: 2.9rem;
+        margin-right: 2rem;
+    }
+
+    &__microphone {
+        display: flex;
+        align-items: center;
+        background-color: $color-black-darker;
+        margin-left: .5rem;
+        padding: 1.5rem;
+        border-radius: 50%;
+    }
+
+    &__badges {
+        display: flex;
+        align-items: center;
+        &--user > span {
+           padding: 1rem 1.2rem;
+           border-radius: 50%;
+           background-color: lightcoral;
+
+       }
+       & > i:not(:last-child) {
+           margin-right: 2rem;
+       } 
+    }
+}
