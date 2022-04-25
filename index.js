@@ -13,6 +13,7 @@ const options = {};
 // options.sleep = 3000;
 // options.inspector = 9229;
 // options.watch = ['private'];
+options.livereload = true;
 // options.livereload = 'https://yourhostname';
 // options.https = { key: Fs.readFileSync('keys/agent2-key.pem'), cert: Fs.readFileSync('keys/agent2-cert.pem')};
 // options.watcher = true; // enables watcher for the release mode only controlled by the app `F.restart()`
