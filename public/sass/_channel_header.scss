@@ -1,3 +1,44 @@
-.channel__header {
-    height: 10rem;
+.channel-header {
+    padding: 2rem 8rem;
+    background-color: $color-black-medium;
+    display: flex;
+    align-items: center;
+
+
+    img {
+        border-radius: 50%;
+        max-height: 9rem;
+    }
+
+    &__meta {
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        color: $color-white;
+        
+        &--name {
+            font-size: 2.4rem;
+        }
+        
+        &--badge {
+            margin-left: 1rem;
+            height: 1.5rem;
+            width: 1.5rem;
+            fill: $color-grey;
+        }
+
+        &--subs {
+            color: $color-grey;
+        }
+    }
+
+    &__subscribe {
+        background-color: $color-red;
+        color: $color-white;
+        padding: 1rem;
+        border-radius: $border-radius;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-left: auto;
+    }
 }
