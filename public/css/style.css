@@ -133,6 +133,16 @@
     letter-spacing: 1px;
     margin-left: auto; }
 
+.channel-tabs {
+  display: flex;
+  padding: 0 8rem 2rem;
+  background-color: #181818; }
+  .channel-tabs__tab {
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase; }
+    .channel-tabs__tab:not(:last-child) {
+      margin-right: 1rem; }
+
 main {
   display: flex; }
 

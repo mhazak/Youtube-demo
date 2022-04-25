@@ -3,6 +3,8 @@ $color-black-medium: #181818;
 $color-black-light: #212121;
 $color-black-darker: #121212;
 $color-black-opacity: rgba(0, 0, 0, 0.3);
+
+$color-white-opacity: rgba(255, 255, 255, 0.3);
 $color-red: #cc0000;
 $color-grey: #aaaaaa;
 $color-grey-dark: #303030;
@@ -17,11 +19,11 @@ $border-radius: 3px;
 @import './sidemenu';
 @import './channel';
 @import './channel_header';
+@import './channel_tabs';
 
 main {
     display: flex;
 }
-
 
 .search-input {
 

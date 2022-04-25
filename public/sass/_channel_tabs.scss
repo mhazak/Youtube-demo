@@ -1,0 +1,14 @@
+.channel-tabs {
+    display: flex;
+    padding: 0 8rem 2rem;
+    background-color: $color-black-medium;
+
+    &__tab {
+        color: $color-white-opacity;
+        text-transform: uppercase;
+        
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}
