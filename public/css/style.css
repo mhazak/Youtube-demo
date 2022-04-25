@@ -70,6 +70,17 @@
       height: 2.4rem;
       margin-right: 2.4rem; }
 
+.channel {
+  width: 100%; }
+  .channel__title {
+    height: 18vw;
+    max-height: 18rem;
+    width: 100%;
+    background-image: url("../images/channels4_banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+
 main {
   display: flex; }
 

@@ -1,5 +1,12 @@
 .channel {
+    width: 100%;
     &__title {
-        
+        height: 18vw;
+        max-height: 18rem;
+        width: 100%;
+        background-image: url('../images/channels4_banner.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }
