@@ -1,6 +1,7 @@
 .channel {
     width: 100%;
     &__title {
+        position: relative;
         height: 18vw;
         max-height: 18rem;
         width: 100%;
@@ -8,5 +9,33 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        &--sites {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            color: $color-white;
+            padding: 1rem;
+            background-color: $color-black-opacity;
+
+            a {
+                text-decoration: none;
+                color: $color-white;
+
+                display: flex;
+                align-items: center;
+                span {
+                    margin-left: .5rem;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+
+            & > a:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
     }
 }
