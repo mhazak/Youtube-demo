@@ -102,6 +102,9 @@
       .channel__title--sites > a:not(:last-child) {
         margin-right: 1rem; }
 
+.channel__header {
+  height: 10rem; }
+
 main {
   display: flex; }
 
