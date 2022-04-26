@@ -1,21 +1,56 @@
-
 <script>
     const channel_tabs = document.querySelector('.channel-tabs');
 
+    const div = document.createElement('div');
+    div.className = 'channel-tabs__tab--active';
+    channel_tabs.appendChild(div);
+
+    const tabs_el = document.querySelectorAll('.tab');
+    const border_el = document.querySelector('.channel-tabs__tab--active');
+
     const tabs = [
-        { name: 'domov' },
-        { name: 'videá' },
-        { name: 'zoznamy' },
-        { name: 'komunita' },
-        { name: 'kanály' },
-        { name: 'informácie' },
-        { name: 'search' },
+        { 'data-id': 'home', name: 'domov', default: true },
+        { 'data-id': 'videos', name: 'videá' },
+        { 'data-id': 'list', name: 'zoznamy' },
+        { 'data-id': 'community', name: 'komunita' },
+        { 'data-id': 'channels', name: 'kanály' },
+        { 'data-id': 'informations', name: 'informácie' },
+        { 'data-id': 'search', name: 'search' },
     ];
+   
+    const switch_tab = function (e) {
+        console.log({target: e.target, rect: e.target.getBoundingClientRect()});
+        tabs_el.forEach(tab => {
+            const classes = tab.classList;
+            classes.add('hidden');
+            classes.remove('active');
+        });
+
+        document.querySelectorAll('.channel-tabs__tab').forEach(tab => {
+            const classes = tab.classList;
+            classes.remove('active');
+
+        });
+
+        const el = e.target;
+        console.log({border_el});
+        border_el.style.transform = `translateX(${el.offsetLeft - 80}px)`;
+
+        el.classList.add('active');
+        const id = el.getAttribute('data-id');
+        const tab_el = document.querySelector(`[data-tab-id="${id}"]`);
+        tab_el?.classList.toggle('hidden');
+    };
     
     for (const tab of tabs) {
         const a = document.createElement('a');
         a.className = 'channel-tabs__tab';
+        if (tab.default)
+            a.classList.add('active');
+        a.setAttribute('data-id', tab['data-id']);
+        a.addEventListener('click', switch_tab);
         a.innerHTML += tab.name;
         channel_tabs.appendChild(a);
     }
+
 </script>

@@ -1,14 +1,43 @@
 .channel-tabs {
     display: flex;
-    padding: 0 8rem 2rem;
+    position: relative;
+    padding: 0 8rem;
     background-color: $color-black-medium;
 
     &__tab {
         color: $color-white-opacity;
         text-transform: uppercase;
+        width: 10.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
         
         &:not(:last-child) {
             margin-right: 1rem;
         }
+
+        &:hover {
+            color: $color-white;
+            text-decoration: none;
+        }
+
+        &.active {
+            color: $color-white;
+        }
+
+        &--active {
+            transition-duration: 200ms;
+            transition-timing-function: ease-out;
+            position: absolute;
+            bottom: 0;
+            width: 10.5rem;
+            height: 2px;
+            background-color: $color-grey;
+        }
     }
+}
+
+.tab {
+    background-color: $color-black-dark;
+    color: $color-white;
+    height: 15rem;
 }

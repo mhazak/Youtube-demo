@@ -71,7 +71,8 @@
       margin-right: 2.4rem; }
 
 .channel {
-  width: 100%; }
+  width: 100%;
+  background-color: #0f0f0f; }
   .channel__title {
     position: relative;
     height: 18vw;
@@ -135,13 +136,35 @@
 
 .channel-tabs {
   display: flex;
-  padding: 0 8rem 2rem;
+  position: relative;
+  padding: 0 8rem;
   background-color: #181818; }
   .channel-tabs__tab {
     color: rgba(255, 255, 255, 0.3);
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 10.5rem;
+    text-align: center;
+    padding-bottom: 1rem; }
     .channel-tabs__tab:not(:last-child) {
       margin-right: 1rem; }
+    .channel-tabs__tab:hover {
+      color: #fff;
+      text-decoration: none; }
+    .channel-tabs__tab.active {
+      color: #fff; }
+    .channel-tabs__tab--active {
+      transition-duration: 200ms;
+      transition-timing-function: ease-out;
+      position: absolute;
+      bottom: 0;
+      width: 10.5rem;
+      height: 2px;
+      background-color: #aaaaaa; }
+
+.tab {
+  background-color: #0f0f0f;
+  color: #fff;
+  height: 15rem; }
 
 main {
   display: flex; }
