@@ -167,7 +167,9 @@
   height: 15rem; }
 
 main {
-  display: flex; }
+  display: flex;
+  height: 100vh;
+  overflow: scroll; }
 
 .search-input {
   border-color: #303030;

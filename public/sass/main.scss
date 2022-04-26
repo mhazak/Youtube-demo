@@ -20,9 +20,12 @@ $border-radius: 3px;
 @import './channel';
 @import './channel_header';
 @import './channel_tabs';
+@import './channel_home';
 
 main {
     display: flex;
+    height: 100vh;
+    overflow: scroll;
 }
 
 .search-input {
